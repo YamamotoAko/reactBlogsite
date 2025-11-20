@@ -1,19 +1,9 @@
-import { useState } from 'react';
-
-export default function Formlist() {
-  const [form, setForm] = useState({
-    source: '1つ選択して下さい',
-  });
-
+export default function Formlist({form ,setForm}) {
   const handleForm = (e) => {
     setForm({
       ...form,
       [e.target.name]: e.target.value,
     });
-  };
-
-  const show = () => {
-    console.log(`source_select:${form.source}`);
   };
   return (
     <div className="formwrap">

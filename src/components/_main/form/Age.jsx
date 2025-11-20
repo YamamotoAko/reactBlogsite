@@ -1,21 +1,11 @@
-import { useState } from 'react';
 
-export default function Age() {
-  const [form, setForm] = useState({
-    age: '0-10',
-  });
-
+export default function Age({form , setForm}) {
   const handleForm = (e) => {
     setForm({
       ...form,
       [e.target.name]: e.target.value,
     });
   };
-
-  const show = () => {
-    console.log(`age:${form.age}`);
-  };
-
   return (
     <div className="formwrap">
       <h2

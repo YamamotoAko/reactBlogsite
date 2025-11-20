@@ -1,5 +1,5 @@
 import FirstViewImg from './FIrstviewImg';
-import firstview from './../assets/images/firstview.jpg';
+import firstview from './../../assets/images/firstview.jpg';
 
 export default function FirstView() {
   return (

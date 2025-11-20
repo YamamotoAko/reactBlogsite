@@ -1,5 +1,5 @@
-import thumbDown_n from './../assets/images/thumbDown_n.svg';
-import thumbDown_b from './../assets/images/thumbDown_b.svg';
+import thumbDown_n from './../../assets/images/thumbDown_n.svg';
+import thumbDown_b from './../../assets/images/thumbDown_b.svg';
 import { useState } from 'react';
 
 export default function DisLikeButton({ init = 0 }) {

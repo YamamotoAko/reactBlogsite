@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import like_n from './../assets/images/thumbUp_n.svg';
-import like_r from './../assets/images/thumbUp_r.svg';
+import like_n from './../../assets/images/thumbUp_n.svg';
+import like_r from './../../assets/images/thumbUp_r.svg';
 
 export default function LikeButton({ init = 0 }) {
   // カウント数

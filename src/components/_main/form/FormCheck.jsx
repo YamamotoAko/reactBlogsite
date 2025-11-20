@@ -1,10 +1,4 @@
-import { useState } from 'react';
-
-export default function FormCheck() {
-  const [form, setForm] = useState({
-    category: ['music', 'art'],
-  });
-
+export default function FormCheck({form ,setForm}) {
   const handleFormMulti = (e) => {
     const fa = form.category;
     if (e.target.checked) {
@@ -17,10 +11,6 @@ export default function FormCheck() {
       [e.target.name]: fa,
     });
   };
-  const show = () => {
-    console.log(`category :${form.category}`);
-  };
-
   return (
     <div className="formwrap">
       <h2

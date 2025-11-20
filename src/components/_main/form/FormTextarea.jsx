@@ -1,18 +1,9 @@
-import { useState } from 'react';
-
-export default function FormTextarea() {
-  const [form, setForm] = useState({
-    comment: `ここに記入してください`,
-  });
-
+export default function FormTextarea({form ,setForm}) {
   const handleForm = (e) => {
     setForm({
       ...form,
       [e.target.name]: e.target.value,
     });
-  };
-  const show = () => {
-    console.log(`コメント :${form.comment}`);
   };
   return (
     <div className="formwrap">
@@ -27,7 +18,7 @@ export default function FormTextarea() {
         DESIGN in the future?
       </label>
       <textarea
-        name="comennt"
+        name="comment"
         id="comment"
         cols="30"
         rows="7"
